@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    background: #243B55;
+    font-family: 'Roboto', sans-serif;
+}
+
+.grid {
+    height: 400px;
+    width: 400px;
+    border: 2px solid #fff;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #FFDC00;
+}
+
+button {
+    margin: 0 auto;
+    display: block;
+    width: 150px;
+    height: 50px;
+    background-color: transparent;
+    transition: background-color .3s;
+    border: 1px solid;
+    color: #fff;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:focus{
+    outline: none;
+}
+
+button:hover {
+    background-color: #fff;
+    color: rgb(40,40,40);
+}
+
+.square {
+    width: 40px;
+    height: 40px;
+    box-shadow: -1px -1px rgb(255 255 255 / 20%);
+    /* background-color: rgb(40,40,40); */
+}
+
+.snake {
+    background-color: #FFDC00;
+    /* border-radius: 50px; */
+}
+
+.apple {
+  background-color: #01FF70;  
+  animation: pulse-animation 2s infinite;
+  border-radius: 50%;
+  box-shadow: 0px 0px 1px 1px #0000001a;
+}
+
+@keyframes pulse-animation {
+  0% {
+    box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2);
+  }
+  100% {
+    box-shadow: 0 0 0 10px rgba(1, 255, 112, 0.3);
+  }
+}
+
